@@ -1,0 +1,90 @@
+input {
+	background-color: $light-grey;
+	border: 3px solid $light-grey;
+}
+
+input, button, select {
+	padding: 10px 0;
+	width: 100%;
+	margin-bottom: 20px;
+	&:focus{
+		outline: none;
+	}
+}
+
+select {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	border-radius: none;
+	border: 3px solid $light-grey;
+	background-color: $light-grey;
+}
+
+.input-white {
+	background-color: $white;
+	border: 3px solid $white;
+}
+
+.input-grey {
+	background-color: $light-grey;
+	border: 3px solid $light-grey;
+}
+
+.btn {	
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border:none;
+	text-align: center;
+}
+
+.btn-gold {
+	background-color: $gold;
+	color: $white;
+	border: 3px solid $gold;
+	&:hover {
+		background-color: darken($gold, 10% );
+		border-color: darken($gold, 10% );
+	}
+}
+
+.btn-white {
+	background-color: $white;
+	color: $black;
+	border: 3px solid $light-grey;
+}
+
+.btn-grey{
+	background-color: $light-grey;
+	color: $black;
+	border: 3px solid $light-grey;
+}
+
+.select-white {
+	border: 3px solid $white;
+	background-color: $white;
+}
+
+@media (min-width:$tablet-portrait){
+	input, button, select {
+		width: 30%;
+	}
+}
+
+@media (min-width:$tablet-landscape){
+	input, button, select {
+		width: 30%;
+	}
+}
+
+@media (min-width:$desktop){
+	input, button, select {
+		width: 30%;
+	}
+}
+
+@media (min-width:$desktop-large){
+	input, button, select {
+		width: 30%;
+	}
+}

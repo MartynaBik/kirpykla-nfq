@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Kirpykla</title>
+</head>
+<body>
+    <section id="navigation" class="bg-green section-full section-no-top-bottom">
+        <div class="relative">
+            <div class="center flex-container flex-justify">
+                <span  class="center-content">
+                    <a id="headerCustomer" class="headerCustomer header-link " href="#registrationHairdresser" onclick="showSection('registrationHairdresser', 'availabilityHairdresser')"> 
+                        <img id="headerCustomerImg" class="width-100" alt="">
+                        <h1>Klientams</h1>
+                    </a>
+                </span>
+                <span class="center-content">
+                    <a id="headerHair" class="headerHair header-link" href="#availabilityHairdresser" onclick="showSection('availabilityHairdresser', 'registrationHairdresser')">
+                        <img id="headerHairImg" class="width-100" alt="">
+                        <h1>Darbuotojams</h1>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section id="registrationHairdresser" class="height-100 hide">
+        <h1 class="bold">Užsirašyk!</h1>
+        
+        <form id="reservationSearch" onsubmit="showTimes(); return false;">
+            <h4>Pasirinkite datą:</h4>
+
+             <div class=" flex-container flex-justify">
+                <input id="searchDate" type="text" class="datepicker" name="searchDate" placeholder="Pasirinkite datąs" onclick="prefillDate('searchToday', 'searchTomorrow')" autocomplete="off">    
+                <button id="searchToday" class="btn btn-grey" onclick="prefillToday('searchDate', 'searchToday', 'searchTomorrow')">Šiandien</button>  
+                <button id="searchTomorrow" class="btn btn-grey" onclick="prefillTomorrow('searchDate', 'searchToday', 'searchTomorrow')">Rytoj</button>
+            </div>
+
+            <h4>Pasirinkite laiką:</h4>
+             <div class=" flex-container flex-justify">
+                <input id="searchStartTime" class="input-grey" type="time" name="searchDate">
+                <input id="searchEndTime" class="input-grey" type="time" name="searchDate">
+                <input id="empty" class="input-white" disabled="">
+            </div>
+
+            <button class="btn btn-gold" type="submit" value="">Ieškoti</button>
+        </form>
+
+        <div id="showSelectedAvailability">
+            <div id="showSelectedTimeTable" class="">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="registrationHaircut" class="show bg-light-grey bottom hidden"> 
+        <form onsubmit="registrateCustomer(); return false"> 
+            <div class="center flex-container flex-center">
+                <span id="fillDateTime" class='bold size-20 width-15' ></span> 
+                <select class='select-white width-15 hairDresseList'></select>
+                <input class='input-white width-15' type='text' placeholder='Jūsų vardas'> 
+                <input class='input-white width-15' type='email' placeholder='Jūsų el. paštas'>
+                <button class='btn btn-gold width-15'>Registruotis!</button> 
+            </div>
+        </form>
+    </section>
+
+    <section id="availabilityHairdresser" class="height-100 hide">
+        <h1>Kirpėjų užimtumas</h1>
+        <div class=" flex-container flex-justify">
+            <input type="text" id="filterName" onkeyup="filterAvailability()" placeholder="Kirpėjo vardas" title="Type in a name">    
+
+            <select id="hairDresseList" class="hairDresseList select" onchange="filterAvailability()"></select> 
+            
+            <select id="availListFilter" class="availList select" onchange="filterAvailability()">
+                <option>Visi</option>
+                <option>Rezervuota</option>
+                <option>Laisvi</option>
+            </select>
+        </div>
+
+        <div class=" flex-container flex-justify">
+            <input id="filterDate" type="text" class="datepicker" name="filterDate" onclick="prefillDate('filterToday', 'filterTomorrow')" onchange="filterAvailability()" placeholder="Pasirinkite datą" autocomplete="off">
+            
+            <button id="filterToday" class="btn btn-grey" type="text" name="filterDateToday" 
+            onclick="prefillToday('filterDate', 'filterToday', 'filterTomorrow')" onchange="filterAvailability()">Šiandien </button>
+            
+            <button id="filterTomorrow" class="btn btn-grey" type="text" name="filterDateTommorow" 
+            onclick="prefillTomorrow('filterDate', 'filterToday', 'filterTomorrow')" onchange="filterAvailability()"> Rytoj </button>  
+        </div>
+        
+
+    <div id="availabilityHairdresser">
+        <div id="showTable" class="reservationTable">
+        </div>
+    </div>
+    </section>
+
+    <script type="text/javascript">
+
+
+        function renderCategories(list) {
+
+            html = '';
+            for (var item in list) {
+                html += '<option value="'+ list[item].type +'">'+ list[item].type +'</option>';
+            }
+
+            return html;
+        }
+
+        function renderInfoTable(list) {
+
+            html = '';
+
+            for (var dayId in list.timeSplit) {
+
+                var dayInfo = list.timeSplit[dayId];
+
+                headerHtml = 
+                '<div class="divTableRow divTableHeader">' +         
+                    '<div class="divTableRowCell dates bold">'+ dayInfo.date +'</div>'+
+                '</div>';
+
+                detailsHtml = '';
+
+                for (var workerId in dayInfo.hairCuter) {
+                    var worker = dayInfo.hairCuter[workerId];
+
+                    for(var availabilityId in worker.availability) {
+                        var availability = worker.availability[availabilityId];
+
+                        detailsDiffsHTML = '';
+                        onclickHtml = ''
+                        if (!availability.free) {
+                            detailsDiffsHTML = 
+                             '<div class="divTableRowCell width-25 type">'+ availability.type +'</div>'+
+                             '<div class="divTableRowCell width-25 align-right client">'+ availability.client +'</div>';
+                        }
+                        else {
+                            onclickHtml = 'onclick="showRegistration(this,\'dates\', \'time\')"';
+                            detailsDiffsHTML = 
+                            '<div class="divTableRowCell width-50 align-right avail registration" >' + "Užregistruoti" + '</div>' ;
+                        }
+
+                        detailsHtml += 
+                        '<div class="divTableRow" '+ onclickHtml +'>' + 
+                            '<div class="divTableRowCell dates hide">'+ dayInfo.date +'</div>' +
+                            '<div class="divTableRowCell free hide">'+ availability.free +'</div>' +
+                            '<div class="divTableRowCell width-15 time">'+ availability.time + '</div>' +
+                            '<div class="divTableRowCell width-35 name">'+ worker.name +'</div>' +
+                            detailsDiffsHTML +
+                        '</div>';
+
+                    }
+                }
+
+                html += headerHtml + detailsHtml;
+            }
+
+            return html;
+        
+        }
+
+
+        //------------------------------------------------------------------ 
+        //--- Lentele,atvaizduojanti kliento pasirinktus laikus kirpykloje -
+        //------------------------------------------------------------------ 
+        function renderRegistrationTable(list, startTime, endTime, date) {
+
+            var dateElement = new Date(date);  
+
+            startTime = (startTime) ? startTime : "10:00";
+            endTime = (endTime) ? endTime : "20:00";
+
+            //html = '<p>Atsiprašome, viskas rezervuota</p>';
+             html = '';
+
+            for (var dayId in list.timeSplit) {
+
+                var dayInfo = list.timeSplit[dayId];
+
+                dayTable = new Date(dayInfo.date);
+
+                if (equalDate(date, dayTable)) {
+                   
+
+                    headerHtml = 
+                    '<div class="divTableRow divTableHeader">' +         
+                        '<div class="divTableRowCell dates bold">'+ dayInfo.date +'</div>'+
+                    '</div>';
+
+                    detailsHtml = '';
+
+                    for (var workerId in dayInfo.hairCuter) {
+                        var worker = dayInfo.hairCuter[workerId];
+
+                        for(var availabilityId in worker.availability) {
+                            var availability = worker.availability[availabilityId];
+
+                            if ((availability.free) && (availability.time > startTime && availability.time < endTime)){
+
+                                onclickHtml = '';
+                                onclickHtml = 'onclick="showRegistration(this,\'dates\', \'time\')"';
+
+                                detailsHtml += 
+                                '<div class="divTableRow" '+ onclickHtml +'>' + 
+                                    '<div class="divTableRowCell dates hide">'+ dayInfo.date +'</div>' +
+                                    '<div class="divTableRowCell free hide">'+ availability.free +'</div>' +
+                                    '<div class="divTableRowCell width-15 time">'+ availability.time + '</div>' +
+                                    '<div class="divTableRowCell width-35 name">'+ worker.name +'</div>' +
+                                    '<div class="divTableRowCell width-50 align-right avail registration" >' + "Registruotis" + '</div>' +
+                                '</div>';
+                            }
+
+                        }
+                    }
+
+                    html += headerHtml + detailsHtml;
+                }
+
+                
+            }
+
+            return html;
+        
+        }
+
+        fetch('/categories.json').then((resp) => resp.json()).then(function(data) {
+
+            categoriesHTML = renderCategories(data);
+
+            document.getElementsByClassName("hairDresseList")[0].innerHTML = categoriesHTML;
+            document.getElementsByClassName("hairDresseList")[1].innerHTML = categoriesHTML;
+
+        });
+
+        var registrationsInfo = null;
+
+        fetch('/registrations.json').then((resp) => resp.json()).then(function(data) {
+            registrationInfo = data;
+            html = renderInfoTable(registrationInfo);
+            document.getElementById("showTable").innerHTML = html;
+
+
+            registrationsHTML = renderRegistrationTable(registrationInfo, document.getElementById('searchStartTime').value, document.getElementById('searchEndTime').value, document.getElementById('searchDate').value);
+
+
+            document.getElementById("showSelectedTimeTable").innerHTML = registrationsHTML;
+
+        });
+
+
+    
+    function showSection(elem, elem2){
+        console.log(elem);
+        firstSection = document.getElementById(elem).classList.remove("hide"); 
+        secondSection = document.getElementById(elem2).classList.add("hide"); 
+    }
+
+    //------------------------------------------------------------------ 
+    //--- registration view --------------------------------------------
+    //------------------------------------------------------------------ 
+
+    function showRegistration(elem, date, time) {
+        var dateElement = elem.getElementsByClassName(date)[0].innerHTML;
+        var timeElement = elem.getElementsByClassName(time)[0].innerHTML; 
+
+        var registrationElement = document.getElementById("registrationHaircut");
+        var dateTimeElement = document.getElementById("fillDateTime");
+
+        removeClass(registrationElement, "hidden");
+        dateTimeElement.innerHTML = dateElement + "<br />" + timeElement;
+    }
+
+    function registrateCustomer() {
+        document.getElementById("registrationHaircut").classList.add("hidden");
+    }
+    
+
+    //------------------------------------------------------------------ 
+    //--- Button siandien ir rytoj -------------------------------------
+    //------------------------------------------------------------------ 
+
+    function showTimes() {
+            registrationsHTML = renderRegistrationTable(registrationInfo, document.getElementById('searchStartTime').value, document.getElementById('searchEndTime').value, document.getElementById('searchDate').value);
+            document.getElementById("showSelectedTimeTable").innerHTML = registrationsHTML;
+   }   
+
+   function prefillToday(date, today, tommorow) {
+        var dateElement = document.getElementById(date);
+        dateElement.value = formatDate(new Date());
+        addRemoveClass(today, tommorow);  
+   }
+
+    function prefillTomorrow(date, today, tommorow) {
+        var dateElement = document.getElementById(date);
+        var tomorrowElement = new Date();
+
+        tomorrowElement.setDate(new Date().getDate()+1);
+        dateElement.value = formatDate(tomorrowElement);
+        addRemoveClass(tommorow,today); 
+    }
+
+    function prefillDate(today, tomorrow) {
+        var tomorrowElement = document.getElementById(tomorrow);
+        var todayElement = document.getElementById(today);
+        removeGold(tomorrowElement);
+        removeGold(todayElement);
+    }
+
+    function addRemoveClass(elem, elem2) {
+        var firstElement = document.getElementById(elem);
+        var secondElement = document.getElementById(elem2);
+        firstElement.classList.remove("btn-grey");
+        firstElement.classList.add("btn-gold");
+        removeGold(secondElement);   
+    }
+
+    function removeGold(elem) {
+        if (hasClass(elem, "btn-gold")) {
+            elem.classList.remove("btn-gold");
+            elem.classList.add("btn-grey");
+        }
+    }
+
+    function removeClass(elem, className) {
+         if (hasClass(elem, className)) {
+            elem.classList.remove(className);
+        }
+    }
+
+    function hasClass(elem, className) {
+        return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+    }
+
+
+    function filterAvailability(value) {
+        var inputName = document.getElementById("filterName").value.toUpperCase();
+        var inputDate = document.getElementById("filterDate").value.toUpperCase();
+        var inputHairDresseType = document.getElementById("hairDresseList").value.toUpperCase();
+
+
+        if (inputHairDresseType === "VISI") inputHairDresseType = "";
+
+        filterTable(inputHairDresseType, inputName, inputDate);
+    }
+
+    function formatDate(date) {
+    var d = new Date(date),
+        month = '' + (d.getMonth() + 1),
+        day = '' + d.getDate(),
+        year = d.getFullYear();
+
+    if (month.length < 2) month = '0' + month;
+    if (day.length < 2) day = '0' + day;
+
+    return [month, day, year].join('/');
+}
+
+
+    //------------------------------------------------------------------ 
+    //--- Filtruoti kirpyklos duomenis pagal pasirinktus kriterijus ----
+    //------------------------------------------------------------------ 
+    function filterTable (inputHairDresseType, inputName, inputDate) {
+
+        var table = document.getElementById("showTable");
+        var listTable = table.getElementsByClassName("divTableRow");
+        var availElement = document.getElementById("availListFilter").value;
+        var typeElement = document.getElementById("hairDresseList").value.toUpperCase();
+        typeElement = selectedType(typeElement);
+
+        for (var i = 0; i < listTable.length; i++) {        
+
+            if (isNotHeader(listTable[i])) {
+
+                var typeInTable = listTable[i].getElementsByClassName("type")[0];
+                typeInTableValue = (typeInTable) ? typeInTable.innerHTML.toUpperCase() : "";
+
+                var nameInTableValue = listTable[i].getElementsByClassName("name")[0].innerHTML.toUpperCase();
+
+                var dateInTable = listTable[i].getElementsByClassName("dates")[0].innerHTML;
+
+                var availInTable = listTable[i].getElementsByClassName("free")[0].innerHTML;
+                availElementValue = selectedAvail(availElement);
+
+               
+
+                if ( (nameInTableValue.indexOf(inputName) > -1) && 
+                     (equalDate(inputDate, new Date(dateInTable))) &&
+                     (availInTable.indexOf(availElementValue) > -1)  &&
+                     (typeInTableValue.indexOf(typeElement) > -1)
+                    ){
+
+                    listTable[i].style.display = "";
+                }
+                else {
+                    listTable[i].style.display = "none";
+                }
+            }       
+        }
+    }
+
+    function equalDate(elemInput, elemTable) {
+        var dateInput = (elemInput !== "") ? (new Date(elemInput)).setHours(0, 0, 0, 0) : null;
+        var dateTable = elemTable.setHours(0, 0, 0, 0);
+
+        if ((dateInput === dateTable) || (dateInput == null)){
+            return true;
+        }
+        else {
+           return false;
+        }
+    }
+
+
+    function isNotHeader(elem) {
+        return hasClass(elem, 'divTableHeader') !== true;
+    }
+
+    function selectedAvail(elem) {
+        switch(elem) {
+            case "Rezervuota":
+                return "false";
+            break;
+            case "Laisvi":
+                return "true";
+            break;
+            case "Visi":
+                return "";
+            break;
+            default:
+                return "";
+        }
+    }
+
+    function selectedType(elem) {
+        if (elem === 'VISI') {
+            return "";
+        }
+        else {
+            return elem;
+        }
+    }
+
+    $( function() {
+        $( ".datepicker" ).datepicker();
+    } );
+
+    </script>
+
+
+
+
+    <script type="text/javascript" src="vendor.js"></script>
+    <script type="text/javascript" src="bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</body>
+</html>

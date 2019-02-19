@@ -1,0 +1,142 @@
+{
+   "timeSplit":[
+      {
+         "date":"2019-02-16",
+         "hairCuter":[
+            {
+               "name":"Anabelė Barbaraitė",
+               "availability":[
+                  {
+                     "time":"10:00",
+                     "free": false,
+                     "type":"Konsultacija",
+                     "client":"Jonas Jonaitis"
+                  },
+                  {
+                     "time":"11:30",
+                     "free": false,
+                     "type":"Vyr. kirpimas",
+                     "client":"Jonas Jonaitis"
+                  },
+                  {
+                     "time":"12:30",
+                     "free": true,
+                     "type":"",
+                     "client":""
+                  },
+                  {
+                     "time":"13:30",
+                     "free": true,
+                     "type":"",
+                     "client":""
+                  },
+                  {
+                     "time":"14:30",
+                     "free": false,
+                     "type":"Vyr. kirpimas",
+                     "client":"Jonas Jonaitis"
+                  },
+                  {
+                     "time":"15:30",
+                     "free": true,
+                     "type":"",
+                     "client":""
+                  },
+                  {
+                     "time":"16:30",
+                     "free": false,
+                     "type":"Vyr. kirpimas",
+                     "client":"Jonas Jonaitis"
+                  }
+               ]
+            },
+            {
+               "name":"Kita Kirpeja",
+               "availability":[
+                  {
+                     "time":"12:00",
+                     "free": false,
+                     "type":"Mot. kirpimas",
+                     "client":"Petrė Petraitė"
+                  },
+                  {
+                     "time":"12:30",
+                     "free": true,
+                     "type":"",
+                     "client":""
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "date":"2019-02-18",
+         "hairCuter":[
+            {
+               "name":"Anabelė Barbaraitė",
+               "availability":[
+                  {
+                     "time":"10:00",
+                     "free": false,
+                     "type":"Konsultacija",
+                     "client":"Jonas Jonaitis"
+                  },
+                  {
+                     "time":"11:30",
+                     "free": false,
+                     "type":"Vyr. kirpimas",
+                     "client":"Jonas Jonaitis"
+                  },
+                  {
+                     "time":"12:30",
+                     "free": true,
+                     "type":"",
+                     "client":""
+                  },
+                  {
+                     "time":"13:30",
+                     "free": true,
+                     "type":"",
+                     "client":""
+                  },
+                  {
+                     "time":"14:30",
+                     "free": false,
+                     "type":"Vyr. kirpimas",
+                     "client":"Jonas Jonaitis"
+                  },
+                  {
+                     "time":"15:30",
+                     "free": true,
+                     "type":"",
+                     "client":""
+                  },
+                  {
+                     "time":"16:30",
+                     "free": false,
+                     "type":"Vyr. kirpimas",
+                     "client":"Jonas Jonaitis"
+                  }
+               ]
+            },
+            {
+               "name":"Kita Kirpeja",
+               "availability":[
+                  {
+                     "time":"12:00",
+                     "free": false,
+                     "type":"Mot. kirpimas",
+                     "client":"Petrė Petraitė"
+                  },
+                  {
+                     "time":"12:30",
+                     "free": true,
+                     "type":"",
+                     "client":""
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}

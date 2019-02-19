@@ -1,0 +1,34 @@
+.relative {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.flex-container {
+	display: inline;
+}
+
+.flex-justify { 
+  justify-content: space-between; 
+}
+
+.flex-center { 
+  justify-content: center ;
+    * {
+  margin-right: 10px;
+  }
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+@media (min-width:$tablet-portrait){
+	.flex-container {
+		display: flex;
+	}
+}
+
+.divTableRowCell {
+	display: inline-block;
+}

@@ -1,0 +1,32 @@
+.header-link {
+	text-decoration: none;
+	color: $black;
+	&:hover {
+		color: $gold;
+	}
+	img {
+		display: block;
+		margin: auto;
+	}
+}
+
+.headerCustomer img{
+	content:url("/assets/images/curl.png");
+	&:hover {
+		content:url("/assets/images/curl-color.png");
+	}
+}
+
+
+.headerHair img{
+	content:url("/assets/images/girl.png");
+	&:hover {
+		content:url("/assets/images/curl-color.png");
+	}
+}
+
+@media (min-width:$tablet-portrait){
+	.header-link img {
+		left: 50%;
+	}
+}

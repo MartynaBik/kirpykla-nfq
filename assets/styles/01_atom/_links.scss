@@ -1,0 +1,10 @@
+.divTableRow{
+	&:hover {
+		.registration{
+			color: darken($gold, 10% );
+			 font-family: Aller-bold;
+			 cursor: pointer;
+		}
+		
+	}
+}

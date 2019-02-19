@@ -1,0 +1,17 @@
+.divTableHeader{
+	background-color: $green;
+}
+.divTableRow {
+	border-top: 0.5px solid $light-grey;
+	padding: 20px 20px;
+
+	.nameHairdresser {
+		&:before{
+			content: "Jus apkirps ";
+		}
+	}
+}
+
+.avail {
+	color: $gold;
+}

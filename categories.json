@@ -1,0 +1,22 @@
+[
+   {
+      "id":0,
+      "type":"Visi"
+   },
+   {
+      "id":1,
+      "type":"Mot. kirpimas"
+   },
+   {
+      "id":2,
+      "type":"Vyr. kirpimas"
+   },
+   {
+      "id":3,
+      "type":"Plaukų dažymas"
+   },
+   {
+      "id":4,
+      "type":"Konsultacija"
+   }
+]
