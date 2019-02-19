@@ -32,15 +32,15 @@
             <h4>Pasirinkite datą:</h4>
 
              <div class=" flex-container flex-justify">
-                <input id="searchDate" type="text" class="datepicker" name="searchDate" placeholder="Pasirinkite datąs" onclick="prefillDate('searchToday', 'searchTomorrow')" autocomplete="off">    
+                <input id="searchDate" type="text" class="datepicker" name="searchDate" placeholder="Pasirinkite datą" onclick="prefillDate('searchToday', 'searchTomorrow')" autocomplete="off">    
                 <button id="searchToday" class="btn btn-grey" onclick="prefillToday('searchDate', 'searchToday', 'searchTomorrow')">Šiandien</button>  
                 <button id="searchTomorrow" class="btn btn-grey" onclick="prefillTomorrow('searchDate', 'searchToday', 'searchTomorrow')">Rytoj</button>
             </div>
 
             <h4>Pasirinkite laiką:</h4>
              <div class=" flex-container flex-justify">
-                <input id="searchStartTime" class="input-grey" type="time" name="searchDate">
-                <input id="searchEndTime" class="input-grey" type="time" name="searchDate">
+                <input id="searchStartTime" class="input-grey" type="time" name="searchDate" placeholder="10:00">
+                <input id="searchEndTime" class="input-grey" type="time" name="searchDate" placeholder="20:00">
                 <input id="empty" class="input-white" disabled="">
             </div>
 
@@ -254,7 +254,6 @@
 
     
     function showSection(elem, elem2){
-        console.log(elem);
         firstSection = document.getElementById(elem).classList.remove("hide"); 
         secondSection = document.getElementById(elem2).classList.add("hide"); 
     }
@@ -444,9 +443,12 @@
         }
     }
 
-    $( function() {
-        $( ".datepicker" ).datepicker();
-    } );
+    document.addEventListener("DOMContentLoaded", function(event) {
+        console.log("afsdf");
+        $( function() {
+            $( ".datepicker" ).datepicker();
+        } );
+    });
 
     </script>
 
