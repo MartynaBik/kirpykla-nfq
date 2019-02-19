@@ -446,7 +446,14 @@
     document.addEventListener("DOMContentLoaded", function(event) {
         console.log("afsdf");
         $( function() {
-            $( ".datepicker" ).datepicker();
+            $('.datepicker').datepicker({
+              inline: true,
+              showOtherMonths: true,
+              dayNamesMin: ['S', 'P', 'A', 'T', 'K', 'P', 'Š'],
+              monthNames: [ "Sausis", "Vasaris", "Kovas", "Balandis",
+                   "Gegužė", "Birželis", "Liepa", "Rugpjūtis", "Rugsėjis",
+                   "Spalis", "Lapkritis", "Gruodis" ]
+            });
         } );
     });
 

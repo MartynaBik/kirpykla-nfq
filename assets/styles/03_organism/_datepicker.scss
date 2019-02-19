@@ -1,9 +1,93 @@
 .ui-datepicker {
-	background-color: $green;
+	background-color: $white;
+	padding: 10px;
+	border: 3px solid $light-grey;
 	z-index:99;
+	/*width: 30%;*/
 }
 
 .ui-state-default {
-	text-underline: none;
 	color: $black;
+	&:hover {
+		color: $gold;
+	}
+}
+
+.ui-datepicker table {
+  /*width: 100%;*/
+}
+
+.ui-datepicker a {
+  text-decoration: none;
+}
+
+.ui-datepicker table {
+  width: 100%;
+}
+
+.ui-datepicker-title {
+  text-align: center;
+}
+
+.ui-datepicker-prev, .ui-datepicker-next {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  background-image: url('/assets/images/arrow.png');
+  background-repeat: no-repeat;
+  line-height: 600%;
+  overflow: hidden;
+}
+
+
+.ui-datepicker-prev {
+  float: left;
+  background-position: center -30px;
+}
+.ui-datepicker-next {
+  float: right;
+  background-position: center 0px;
+}
+
+.ui-datepicker th {
+  text-transform: uppercase;
+  padding: 5px 0;
+  color: $grey;
+  text-shadow: 1px 0px 0px #fff;
+  filter: dropshadow(color=#fff, offx=1, offy=0);
+}
+
+
+.ui-datepicker td span, .ui-datepicker td a {
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: $black;
+}
+
+.ui-datepicker-calendar .ui-state-hover {
+  background: $green;
+  border-radius: 50%;
+}
+
+.ui-datepicker-calendar .ui-state-default  {
+	color: $black;
+}
+
+.ui-datepicker-unselectable .ui-state-default {
+  color: $light-grey;
+}
+
+.ui-datepicker-title {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.ui-datepicker-header {
+	padding-bottom: 10px;
 }
