@@ -10,7 +10,7 @@
         <div class="relative">
             <div class="center flex-container flex-justify">
                 <span  class="center-content">
-                    <a id="headerCustomer" class="headerCustomer header-link " href="#registrationHairdresser" onclick="showSection('registrationHairdresser', 'availabilityHairdresser')"> 
+                    <a id="headerCustomer" class="headerCustomer header-link " href="#registrationHairdresser" onclick="showSection('registrationHairdresser', 'availabilityHairdresser')">
                         <img id="headerCustomerImg" class="width-100" alt="">
                         <h1>Klientams</h1>
                     </a>
@@ -27,13 +27,13 @@
 
     <section id="registrationHairdresser" class="height-100 hide">
         <h1 class="bold">Užsirašyk!</h1>
-        
+
         <form id="reservationSearch" onsubmit="showTimes(); return false;">
             <h4>Pasirinkite datą:</h4>
 
              <div class=" flex-container flex-justify">
-                <input id="searchDate" type="text" class="datepicker" name="searchDate" placeholder="Pasirinkite datą" onclick="prefillDate('searchToday', 'searchTomorrow')" autocomplete="off">    
-                <button id="searchToday" class="btn btn-grey" onclick="prefillToday('searchDate', 'searchToday', 'searchTomorrow')">Šiandien</button>  
+                <input id="searchDate" type="text" class="datepicker" name="searchDate" placeholder="Pasirinkite datą" onclick="prefillDate('searchToday', 'searchTomorrow')" autocomplete="off">
+                <button id="searchToday" class="btn btn-grey" onclick="prefillToday('searchDate', 'searchToday', 'searchTomorrow')">Šiandien</button>
                 <button id="searchTomorrow" class="btn btn-grey" onclick="prefillTomorrow('searchDate', 'searchToday', 'searchTomorrow')">Rytoj</button>
             </div>
 
@@ -41,10 +41,10 @@
              <div class=" flex-container flex-justify">
                 <input id="searchStartTime" class="input-grey" type="time" name="searchDate" placeholder="10:00">
                 <input id="searchEndTime" class="input-grey" type="time" name="searchDate" placeholder="20:00">
-                <input id="empty" class="input-white" disabled="">
+                <button id="showAllButton" class="btn btn-grey" onclick="showAll(); return false;"> Visi įrašai</button>
             </div>
 
-            <button class="btn btn-gold" type="submit" value="">Ieškoti</button>
+            <button class="btn btn-gold" type="submit">Ieškoti</button>
         </form>
 
         <div id="showSelectedAvailability">
@@ -54,42 +54,44 @@
 
     </section>
 
-    <section id="registrationHaircut" class="show bg-light-grey bottom hidden"> 
-        <form onsubmit="registrateCustomer(); return false"> 
+    <section id="registrationHaircut" class="show bg-light-grey bottom hidden">
+        <form onsubmit="registrateCustomer(); return false">
             <div class="center flex-container flex-center">
-                <span id="fillDateTime" class='bold size-20 width-15' ></span> 
+                <span id="fillDateTime" class='bold size-20 width-15' ></span>
                 <select class='select-white width-15 hairDresseList'></select>
-                <input class='input-white width-15' type='text' placeholder='Jūsų vardas'> 
+                <input class='input-white width-15' type='text' placeholder='Jūsų vardas'>
                 <input class='input-white width-15' type='email' placeholder='Jūsų el. paštas'>
-                <button class='btn btn-gold width-15'>Registruotis!</button> 
+                <button class='btn btn-gold width-15'>Registruotis!</button>
             </div>
         </form>
     </section>
 
     <section id="availabilityHairdresser" class="height-100 hide">
         <h1>Kirpėjų užimtumas</h1>
-        <div class=" flex-container flex-justify">
-            <input type="text" id="filterName" onkeyup="filterAvailability()" placeholder="Kirpėjo vardas" title="Type in a name">    
+        <form onsubmit="filterAvailability(); return false;">
+            <div class="flex-container flex-justify">
+                <input type="text" id="filterName" onkeyup="filterAvailability()" placeholder="Kirpėjo vardas" title="Type in a name">
 
-            <select id="hairDresseList" class="hairDresseList select" onchange="filterAvailability()"></select> 
-            
-            <select id="availListFilter" class="availList select" onchange="filterAvailability()">
-                <option>Visi</option>
-                <option>Rezervuota</option>
-                <option>Laisvi</option>
-            </select>
-        </div>
+                <select id="hairDresseList" class="hairDresseList select" onchange="filterAvailability()"></select>
 
-        <div class=" flex-container flex-justify">
-            <input id="filterDate" type="text" class="datepicker" name="filterDate" onclick="prefillDate('filterToday', 'filterTomorrow')" onchange="filterAvailability()" placeholder="Pasirinkite datą" autocomplete="off">
-            
-            <button id="filterToday" class="btn btn-grey" type="text" name="filterDateToday" 
-            onclick="prefillToday('filterDate', 'filterToday', 'filterTomorrow')" onchange="filterAvailability()">Šiandien </button>
-            
-            <button id="filterTomorrow" class="btn btn-grey" type="text" name="filterDateTommorow" 
-            onclick="prefillTomorrow('filterDate', 'filterToday', 'filterTomorrow')" onchange="filterAvailability()"> Rytoj </button>  
-        </div>
-        
+                <select id="availListFilter" class="availList select" onchange="filterAvailability()">
+                    <option>Visi</option>
+                    <option>Rezervuota</option>
+                    <option>Laisvi</option>
+                </select>
+            </div>
+
+            <div class=" flex-container flex-justify">
+                <input id="filterDate" type="text" class="datepicker" name="filterDate" onclick="prefillDate('filterToday', 'filterTomorrow')" onchange="filterAvailability()" placeholder="Pasirinkite datą" autocomplete="off">
+
+                <button id="filterToday" class="btn btn-grey" name="filterDateToday"
+                onclick="prefillToday('filterDate', 'filterToday', 'filterTomorrow')">Šiandien </button>
+
+                <button id="filterTomorrow" class="btn btn-grey" name="filterDateTommorow"
+                onclick="prefillTomorrow('filterDate', 'filterToday', 'filterTomorrow')"> Rytoj </button>
+            </div>
+        </form>
+
 
     <div id="availabilityHairdresser">
         <div id="showTable" class="reservationTable">
@@ -118,8 +120,8 @@
 
                 var dayInfo = list.timeSplit[dayId];
 
-                headerHtml = 
-                '<div class="divTableRow divTableHeader">' +         
+                headerHtml =
+                '<div class="divTableRow divTableHeader">' +
                     '<div class="divTableRowCell dates bold">'+ dayInfo.date +'</div>'+
                 '</div>';
 
@@ -134,18 +136,18 @@
                         detailsDiffsHTML = '';
                         onclickHtml = ''
                         if (!availability.free) {
-                            detailsDiffsHTML = 
+                            detailsDiffsHTML =
                              '<div class="divTableRowCell width-25 type">'+ availability.type +'</div>'+
                              '<div class="divTableRowCell width-25 align-right client">'+ availability.client +'</div>';
                         }
                         else {
                             onclickHtml = 'onclick="showRegistration(this,\'dates\', \'time\')"';
-                            detailsDiffsHTML = 
+                            detailsDiffsHTML =
                             '<div class="divTableRowCell width-50 align-right avail registration" >' + "Užregistruoti" + '</div>' ;
                         }
 
-                        detailsHtml += 
-                        '<div class="divTableRow" '+ onclickHtml +'>' + 
+                        detailsHtml +=
+                        '<div class="divTableRow" '+ onclickHtml +'>' +
                             '<div class="divTableRowCell dates hide">'+ dayInfo.date +'</div>' +
                             '<div class="divTableRowCell free hide">'+ availability.free +'</div>' +
                             '<div class="divTableRowCell width-15 time">'+ availability.time + '</div>' +
@@ -160,16 +162,16 @@
             }
 
             return html;
-        
+
         }
 
 
-        //------------------------------------------------------------------ 
+        //------------------------------------------------------------------
         //--- Lentele,atvaizduojanti kliento pasirinktus laikus kirpykloje -
-        //------------------------------------------------------------------ 
+        //------------------------------------------------------------------
         function renderRegistrationTable(list, startTime, endTime, date) {
 
-            var dateElement = new Date(date);  
+            var dateElement = new Date(date);
 
             startTime = (startTime) ? startTime : "10:00";
             endTime = (endTime) ? endTime : "20:00";
@@ -184,10 +186,10 @@
                 dayTable = new Date(dayInfo.date);
 
                 if (equalDate(date, dayTable)) {
-                   
 
-                    headerHtml = 
-                    '<div class="divTableRow divTableHeader">' +         
+
+                    headerHtml =
+                    '<div class="divTableRow divTableHeader">' +
                         '<div class="divTableRowCell dates bold">'+ dayInfo.date +'</div>'+
                     '</div>';
 
@@ -204,8 +206,8 @@
                                 onclickHtml = '';
                                 onclickHtml = 'onclick="showRegistration(this,\'dates\', \'time\')"';
 
-                                detailsHtml += 
-                                '<div class="divTableRow" '+ onclickHtml +'>' + 
+                                detailsHtml +=
+                                '<div class="divTableRow" '+ onclickHtml +'>' +
                                     '<div class="divTableRowCell dates hide">'+ dayInfo.date +'</div>' +
                                     '<div class="divTableRowCell free hide">'+ availability.free +'</div>' +
                                     '<div class="divTableRowCell width-15 time">'+ availability.time + '</div>' +
@@ -220,11 +222,11 @@
                     html += headerHtml + detailsHtml;
                 }
 
-                
+
             }
 
             return html;
-        
+
         }
 
         fetch('/categories.json').then((resp) => resp.json()).then(function(data) {
@@ -252,19 +254,19 @@
         });
 
 
-    
+
     function showSection(elem, elem2){
-        firstSection = document.getElementById(elem).classList.remove("hide"); 
-        secondSection = document.getElementById(elem2).classList.add("hide"); 
+        firstSection = document.getElementById(elem).classList.remove("hide");
+        secondSection = document.getElementById(elem2).classList.add("hide");
     }
 
-    //------------------------------------------------------------------ 
+    //------------------------------------------------------------------
     //--- registration view --------------------------------------------
-    //------------------------------------------------------------------ 
+    //------------------------------------------------------------------
 
     function showRegistration(elem, date, time) {
         var dateElement = elem.getElementsByClassName(date)[0].innerHTML;
-        var timeElement = elem.getElementsByClassName(time)[0].innerHTML; 
+        var timeElement = elem.getElementsByClassName(time)[0].innerHTML;
 
         var registrationElement = document.getElementById("registrationHaircut");
         var dateTimeElement = document.getElementById("fillDateTime");
@@ -276,21 +278,30 @@
     function registrateCustomer() {
         document.getElementById("registrationHaircut").classList.add("hidden");
     }
-    
 
-    //------------------------------------------------------------------ 
+
+    //------------------------------------------------------------------
     //--- Button siandien ir rytoj -------------------------------------
-    //------------------------------------------------------------------ 
+    //------------------------------------------------------------------
 
     function showTimes() {
-            registrationsHTML = renderRegistrationTable(registrationInfo, document.getElementById('searchStartTime').value, document.getElementById('searchEndTime').value, document.getElementById('searchDate').value);
-            document.getElementById("showSelectedTimeTable").innerHTML = registrationsHTML;
-   }   
+        registrationsHTML = renderRegistrationTable(registrationInfo, document.getElementById('searchStartTime').value, document.getElementById('searchEndTime').value, document.getElementById('searchDate').value);
+        document.getElementById("showSelectedTimeTable").innerHTML = registrationsHTML;
+   }
+
+   function showAll() {
+       registrationsHTML = renderRegistrationTable(registrationInfo, "10:00", "20:00", "");
+       document.getElementById("showSelectedTimeTable").innerHTML = registrationsHTML;
+
+       document.getElementById('searchStartTime').value = "";
+       document.getElementById('searchEndTime').value = "";
+       document.getElementById('searchDate').value = "";
+   }
 
    function prefillToday(date, today, tommorow) {
         var dateElement = document.getElementById(date);
         dateElement.value = formatDate(new Date());
-        addRemoveClass(today, tommorow);  
+        addRemoveClass(today, tommorow);
    }
 
     function prefillTomorrow(date, today, tommorow) {
@@ -299,7 +310,7 @@
 
         tomorrowElement.setDate(new Date().getDate()+1);
         dateElement.value = formatDate(tomorrowElement);
-        addRemoveClass(tommorow,today); 
+        addRemoveClass(tommorow,today);
     }
 
     function prefillDate(today, tomorrow) {
@@ -314,7 +325,7 @@
         var secondElement = document.getElementById(elem2);
         firstElement.classList.remove("btn-grey");
         firstElement.classList.add("btn-gold");
-        removeGold(secondElement);   
+        removeGold(secondElement);
     }
 
     function removeGold(elem) {
@@ -359,9 +370,9 @@
 }
 
 
-    //------------------------------------------------------------------ 
+    //------------------------------------------------------------------
     //--- Filtruoti kirpyklos duomenis pagal pasirinktus kriterijus ----
-    //------------------------------------------------------------------ 
+    //------------------------------------------------------------------
     function filterTable (inputHairDresseType, inputName, inputDate) {
 
         var table = document.getElementById("showTable");
@@ -370,7 +381,7 @@
         var typeElement = document.getElementById("hairDresseList").value.toUpperCase();
         typeElement = selectedType(typeElement);
 
-        for (var i = 0; i < listTable.length; i++) {        
+        for (var i = 0; i < listTable.length; i++) {
 
             if (isNotHeader(listTable[i])) {
 
@@ -384,9 +395,9 @@
                 var availInTable = listTable[i].getElementsByClassName("free")[0].innerHTML;
                 availElementValue = selectedAvail(availElement);
 
-               
 
-                if ( (nameInTableValue.indexOf(inputName) > -1) && 
+
+                if ( (nameInTableValue.indexOf(inputName) > -1) &&
                      (equalDate(inputDate, new Date(dateInTable))) &&
                      (availInTable.indexOf(availElementValue) > -1)  &&
                      (typeInTableValue.indexOf(typeElement) > -1)
@@ -397,7 +408,7 @@
                 else {
                     listTable[i].style.display = "none";
                 }
-            }       
+            }
         }
     }
 

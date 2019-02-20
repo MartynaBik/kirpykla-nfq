@@ -31,7 +31,7 @@ select {
 	border: 3px solid $light-grey;
 }
 
-.btn {	
+.btn {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	border:none;
@@ -58,6 +58,11 @@ select {
 	background-color: $light-grey;
 	color: $black;
 	border: 3px solid $light-grey;
+	&:hover {
+		background-color: $gold;
+		border-color: $gold;
+		color: $white;
+	}
 }
 
 .select-white {
