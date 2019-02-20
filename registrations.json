@@ -1,142 +1,1279 @@
 {
    "timeSplit":[
+  {
+    "date": "2019-02-18",
+    "hairCuter": [
       {
-         "date":"2019-02-16",
-         "hairCuter":[
-            {
-               "name":"Anabelė Barbaraitė",
-               "availability":[
-                  {
-                     "time":"10:00",
-                     "free": false,
-                     "type":"Konsultacija",
-                     "client":"Jonas Jonaitis"
-                  },
-                  {
-                     "time":"11:30",
-                     "free": false,
-                     "type":"Vyr. kirpimas",
-                     "client":"Jonas Jonaitis"
-                  },
-                  {
-                     "time":"12:30",
-                     "free": true,
-                     "type":"",
-                     "client":""
-                  },
-                  {
-                     "time":"13:30",
-                     "free": true,
-                     "type":"",
-                     "client":""
-                  },
-                  {
-                     "time":"14:30",
-                     "free": false,
-                     "type":"Vyr. kirpimas",
-                     "client":"Jonas Jonaitis"
-                  },
-                  {
-                     "time":"15:30",
-                     "free": true,
-                     "type":"",
-                     "client":""
-                  },
-                  {
-                     "time":"16:30",
-                     "free": false,
-                     "type":"Vyr. kirpimas",
-                     "client":"Jonas Jonaitis"
-                  }
-               ]
-            },
-            {
-               "name":"Kita Kirpeja",
-               "availability":[
-                  {
-                     "time":"12:00",
-                     "free": false,
-                     "type":"Mot. kirpimas",
-                     "client":"Petrė Petraitė"
-                  },
-                  {
-                     "time":"12:30",
-                     "free": true,
-                     "type":"",
-                     "client":""
-                  }
-               ]
-            }
-         ]
+        "name": "Eddie Reed",
+        "availability": [
+          {
+            "time": "10:00",
+            "free": false,
+            "type": "Konsultacija",
+            "client": "Mejia Bray"
+          },
+          {
+            "time": "10:15",
+            "free": false,
+            "type": "Vyr. kirpimas",
+            "client": "Day Mcclure"
+          },
+          {
+            "time": "10:30",
+            "free": false,
+            "type": "Plaukų dažymas",
+            "client": "Lauren Ortiz"
+          },
+          {
+            "time": "10:45",
+            "free": true,
+            "type": "Vyr. kirpimas",
+            "client": "Payne Lang"
+          },
+          {
+            "time": "11:00",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Wilma Bernard"
+          },
+          {
+            "time": "11:15",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Spence Jimenez"
+          },
+          {
+            "time": "11:30",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Marcie Stevenson"
+          },
+          {
+            "time": "11:45",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Vaughan Haynes"
+          },
+          {
+            "time": "12:00",
+            "free": false,
+            "type": "Vyr. kirpimas",
+            "client": "Combs Paul"
+          },
+          {
+            "time": "12:15",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Blackburn Skinner"
+          },
+          {
+            "time": "12:30",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Bell Silva"
+          },
+          {
+            "time": "12:45",
+            "free": false,
+            "type": "Konsultacija",
+            "client": "Lenore Cole"
+          },
+          {
+            "time": "13:00",
+            "free": false,
+            "type": "Konsultacija",
+            "client": "Janis Pena"
+          },
+          {
+            "time": "13:15",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Mcpherson Johnson"
+          },
+          {
+            "time": "13:30",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Harrison Gibbs"
+          },
+          {
+            "time": "13:45",
+            "free": true,
+            "type": "Konsultacija",
+            "client": "Terri Holt"
+          },
+          {
+            "time": "14:00",
+            "free": true,
+            "type": "Konsultacija",
+            "client": "Valeria Sherman"
+          },
+          {
+            "time": "14:15",
+            "free": false,
+            "type": "Vyr. kirpimas",
+            "client": "Downs Durham"
+          },
+          {
+            "time": "14:30",
+            "free": false,
+            "type": "Vyr. kirpimas",
+            "client": "Ruth Monroe"
+          },
+          {
+            "time": "15:00",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Lorie Lindsey"
+          }
+        ]
       },
       {
-         "date":"2019-02-18",
-         "hairCuter":[
-            {
-               "name":"Anabelė Barbaraitė",
-               "availability":[
-                  {
-                     "time":"10:00",
-                     "free": false,
-                     "type":"Konsultacija",
-                     "client":"Jonas Jonaitis"
-                  },
-                  {
-                     "time":"11:30",
-                     "free": false,
-                     "type":"Vyr. kirpimas",
-                     "client":"Jonas Jonaitis"
-                  },
-                  {
-                     "time":"12:30",
-                     "free": true,
-                     "type":"",
-                     "client":""
-                  },
-                  {
-                     "time":"13:30",
-                     "free": true,
-                     "type":"",
-                     "client":""
-                  },
-                  {
-                     "time":"14:30",
-                     "free": false,
-                     "type":"Vyr. kirpimas",
-                     "client":"Jonas Jonaitis"
-                  },
-                  {
-                     "time":"15:30",
-                     "free": true,
-                     "type":"",
-                     "client":""
-                  },
-                  {
-                     "time":"16:30",
-                     "free": false,
-                     "type":"Vyr. kirpimas",
-                     "client":"Jonas Jonaitis"
-                  }
-               ]
-            },
-            {
-               "name":"Kita Kirpeja",
-               "availability":[
-                  {
-                     "time":"12:00",
-                     "free": false,
-                     "type":"Mot. kirpimas",
-                     "client":"Petrė Petraitė"
-                  },
-                  {
-                     "time":"12:30",
-                     "free": true,
-                     "type":"",
-                     "client":""
-                  }
-               ]
-            }
-         ]
+        "name": "Luz Peters",
+        "availability": [
+          {
+            "time": "12:00",
+            "free": true,
+            "type": "Konsultacija",
+            "client": "Steele Guzman"
+          },
+          {
+            "time": "12:15",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Hartman Rich"
+          },
+          {
+            "time": "12:30",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Ora Velazquez"
+          },
+          {
+            "time": "12:45",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Hernandez Franklin"
+          },
+          {
+            "time": "13:00",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Clayton Rasmussen"
+          },
+          {
+            "time": "13:15",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Bentley Hanson"
+          },
+          {
+            "time": "13:30",
+            "free": true,
+            "type": "Vyr. kirpimas",
+            "client": "Fay Stewart"
+          },
+          {
+            "time": "13:45",
+            "free": false,
+            "type": "Konsultacija",
+            "client": "Hahn Nguyen"
+          },
+          {
+            "time": "14:00",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Bowen Butler"
+          },
+          {
+            "time": "14:15",
+            "free": false,
+            "type": "Konsultacija",
+            "client": "Aguirre Bean"
+          },
+          {
+            "time": "14:30",
+            "free": true,
+            "type": "Konsultacija",
+            "client": "Mccall Chen"
+          },
+          {
+            "time": "14:45",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Deleon Ramos"
+          },
+          {
+            "time": "15:00",
+            "free": false,
+            "type": "Plaukų dažymas",
+            "client": "Cantu Frye"
+          },
+          {
+            "time": "15:15",
+            "free": true,
+            "type": "Konsultacija",
+            "client": "Armstrong Buchanan"
+          },
+          {
+            "time": "15:30",
+            "free": false,
+            "type": "Konsultacija",
+            "client": "Woodard Mathis"
+          },
+          {
+            "time": "15:45",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Phelps Bass"
+          },
+          {
+            "time": "16:00",
+            "free": false,
+            "type": "Plaukų dažymas",
+            "client": "Soto Sexton"
+          },
+          {
+            "time": "16:15",
+            "free": true,
+            "type": "Vyr. kirpimas",
+            "client": "Berg Manning"
+          },
+          {
+            "time": "17:00",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Susana Walter"
+          },
+          {
+            "time": "18:00",
+            "free": true,
+            "type": "Vyr. kirpimas",
+            "client": "Kitty Cleveland"
+          }
+        ]
       }
-   ]
+    ]
+  },
+  {
+    "date": "2019-02-19",
+    "hairCuter": [
+      {
+        "name": "Consuelo Freeman",
+        "availability": [
+          {
+            "time": "11:00",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Gale Sparks"
+          },
+          {
+            "time": "11:15",
+            "free": true,
+            "type": "Vyr. kirpimas",
+            "client": "Calhoun Sharp"
+          },
+          {
+            "time": "11:30",
+            "free": false,
+            "type": "Plaukų dažymas",
+            "client": "Shelley Hall"
+          },
+          {
+            "time": "11:45",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Freeman Chan"
+          },
+          {
+            "time": "12:00",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Noel Preston"
+          },
+          {
+            "time": "12:15",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Jenkins Wilkinson"
+          },
+          {
+            "time": "12:30",
+            "free": true,
+            "type": "Vyr. kirpimas",
+            "client": "Leonor Booth"
+          },
+          {
+            "time": "12:45",
+            "free": false,
+            "type": "Konsultacija",
+            "client": "Valarie Buckner"
+          },
+          {
+            "time": "13:00",
+            "free": false,
+            "type": "Plaukų dažymas",
+            "client": "Elvira York"
+          },
+          {
+            "time": "13:15",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Britt Conley"
+          },
+          {
+            "time": "13:30",
+            "free": true,
+            "type": "Konsultacija",
+            "client": "Mari Calhoun"
+          },
+          {
+            "time": "13:45",
+            "free": true,
+            "type": "Konsultacija",
+            "client": "Anastasia Colon"
+          },
+          {
+            "time": "14:00",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Rios Swanson"
+          },
+          {
+            "time": "14:15",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Tania Parrish"
+          },
+          {
+            "time": "14:30",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Clay Mccormick"
+          },
+          {
+            "time": "14:45",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Douglas Stark"
+          },
+          {
+            "time": "15:00",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Helen Jackson"
+          },
+          {
+            "time": "15:15",
+            "free": false,
+            "type": "Vyr. kirpimas",
+            "client": "Annie Tucker"
+          },
+          {
+            "time": "15:30",
+            "free": false,
+            "type": "Konsultacija",
+            "client": "Hill Walsh"
+          },
+          {
+            "time": "16:00",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Kelley Goodman"
+          }
+        ]
+      },
+      {
+        "name": "Charlotte Combs",
+        "availability": [
+          {
+            "time": "13:00",
+            "free": false,
+            "type": "Vyr. kirpimas",
+            "client": "Ramsey Waters"
+          },
+          {
+            "time": "13:15",
+            "free": true,
+            "type": "Konsultacija",
+            "client": "Rosales Burch"
+          },
+          {
+            "time": "13:30",
+            "free": false,
+            "type": "Konsultacija",
+            "client": "Long Hardy"
+          },
+          {
+            "time": "13:45",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Ward Donaldson"
+          },
+          {
+            "time": "14:00",
+            "free": false,
+            "type": "Plaukų dažymas",
+            "client": "Gonzales Morrow"
+          },
+          {
+            "time": "14:15",
+            "free": true,
+            "type": "Vyr. kirpimas",
+            "client": "Winters Stafford"
+          },
+          {
+            "time": "14:30",
+            "free": false,
+            "type": "Plaukų dažymas",
+            "client": "Bobbi Pollard"
+          },
+          {
+            "time": "14:45",
+            "free": true,
+            "type": "Vyr. kirpimas",
+            "client": "Mindy Reyes"
+          },
+          {
+            "time": "15:00",
+            "free": false,
+            "type": "Vyr. kirpimas",
+            "client": "Williamson Burt"
+          },
+          {
+            "time": "15:15",
+            "free": false,
+            "type": "Plaukų dažymas",
+            "client": "Horn Byers"
+          },
+          {
+            "time": "15:30",
+            "free": false,
+            "type": "Konsultacija",
+            "client": "Morton Ryan"
+          },
+          {
+            "time": "15:45",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Leann Miles"
+          },
+          {
+            "time": "16:00",
+            "free": true,
+            "type": "Vyr. kirpimas",
+            "client": "Lorrie Henry"
+          },
+          {
+            "time": "16:15",
+            "free": true,
+            "type": "Konsultacija",
+            "client": "Bonnie Baird"
+          },
+          {
+            "time": "16:30",
+            "free": false,
+            "type": "Plaukų dažymas",
+            "client": "Elisa Gross"
+          },
+          {
+            "time": "16:45",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Bullock Potter"
+          },
+          {
+            "time": "17:00",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Ford Leach"
+          },
+          {
+            "time": "17:15",
+            "free": false,
+            "type": "Vyr. kirpimas",
+            "client": "Sallie Byrd"
+          },
+          {
+            "time": "17:30",
+            "free": true,
+            "type": "Vyr. kirpimas",
+            "client": "Lottie Fuentes"
+          },
+          {
+            "time": "17:45",
+            "free": true,
+            "type": "Vyr. kirpimas",
+            "client": "Leblanc Steele"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2019-02-20",
+    "hairCuter": [
+      {
+        "name": "Reid Carney",
+        "availability": [
+          {
+            "time": "10:00",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Jaclyn Leon"
+          },
+          {
+            "time": "10:30",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Gabriela Dalton"
+          },
+          {
+            "time": "11:00",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Marva Hansen"
+          },
+          {
+            "time": "11:30",
+            "free": true,
+            "type": "Vyr. kirpimas",
+            "client": "Lena Harrison"
+          },
+          {
+            "time": "12:00",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Constance Crosby"
+          },
+          {
+            "time": "12:30",
+            "free": true,
+            "type": "Vyr. kirpimas",
+            "client": "Wiley Gilliam"
+          },
+          {
+            "time": "13:00",
+            "free": true,
+            "type": "Konsultacija",
+            "client": "Gilliam Wright"
+          },
+          {
+            "time": "13:30",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Benita Lopez"
+          },
+          {
+            "time": "14:00",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Delgado Meadows"
+          },
+          {
+            "time": "14:30",
+            "free": true,
+            "type": "Vyr. kirpimas",
+            "client": "Amanda Sutton"
+          },
+          {
+            "time": "15:00",
+            "free": true,
+            "type": "Konsultacija",
+            "client": "Dodson Oneil"
+          },
+          {
+            "time": "15:30",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Misty Mcfadden"
+          },
+          {
+            "time": "16:00",
+            "free": false,
+            "type": "Konsultacija",
+            "client": "Jewel Meyer"
+          },
+          {
+            "time": "16:30",
+            "free": false,
+            "type": "Plaukų dažymas",
+            "client": "White Hahn"
+          },
+          {
+            "time": "17:00",
+            "free": false,
+            "type": "Plaukų dažymas",
+            "client": "Marcia Sims"
+          },
+          {
+            "time": "17:30",
+            "free": false,
+            "type": "Vyr. kirpimas",
+            "client": "Michael Dickson"
+          },
+          {
+            "time": "18:00",
+            "free": false,
+            "type": "Vyr. kirpimas",
+            "client": "Anita Osborne"
+          },
+          {
+            "time": "18:30",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Claudia Berry"
+          },
+          {
+            "time": "19:00",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Donaldson Hunt"
+          },
+          {
+            "time": "19:30",
+            "free": true,
+            "type": "Konsultacija",
+            "client": "Alvarez Hogan"
+          }
+        ]
+      },
+      {
+        "name": "Anne Todd",
+        "availability": [
+          {
+            "time": "14:00",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Rena Travis"
+          },
+          {
+            "time": "14:15",
+            "free": false,
+            "type": "Plaukų dažymas",
+            "client": "Lea Molina"
+          },
+          {
+            "time": "14:30",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Myrna Buckley"
+          },
+          {
+            "time": "14:45",
+            "free": true,
+            "type": "Vyr. kirpimas",
+            "client": "Shirley Dawson"
+          },
+          {
+            "time": "15:00",
+            "free": true,
+            "type": "Vyr. kirpimas",
+            "client": "Perez Callahan"
+          },
+          {
+            "time": "15:15",
+            "free": false,
+            "type": "Plaukų dažymas",
+            "client": "Willie Oliver"
+          },
+          {
+            "time": "15:30",
+            "free": true,
+            "type": "Konsultacija",
+            "client": "Jacklyn Curry"
+          },
+          {
+            "time": "15:45",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Dominguez Moreno"
+          },
+          {
+            "time": "16:00",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Sharlene Burton"
+          },
+          {
+            "time": "16:15",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Tucker Hodges"
+          },
+          {
+            "time": "16:30",
+            "free": true,
+            "type": "Vyr. kirpimas",
+            "client": "Duran Mclaughlin"
+          },
+          {
+            "time": "16:45",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Jayne Erickson"
+          },
+          {
+            "time": "17:00",
+            "free": true,
+            "type": "Konsultacija",
+            "client": "Head Morse"
+          },
+          {
+            "time": "17:15",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Glenn Joyce"
+          },
+          {
+            "time": "17:30",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Casey Mcgowan"
+          },
+          {
+            "time": "17:45",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Dunn Shaffer"
+          },
+          {
+            "time": "18:00",
+            "free": false,
+            "type": "Plaukų dažymas",
+            "client": "Morales Castillo"
+          },
+          {
+            "time": "18:15",
+            "free": false,
+            "type": "Plaukų dažymas",
+            "client": "Harriet Lane"
+          },
+          {
+            "time": "18:30",
+            "free": false,
+            "type": "Vyr. kirpimas",
+            "client": "Ryan Mccarthy"
+          },
+          {
+            "time": "18:45",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Gill Livingston"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2019-02-21",
+    "hairCuter": [
+      {
+        "name": "Roxanne Cooley",
+        "availability": [
+          {
+            "time": "12:00",
+            "free": false,
+            "type": "Vyr. kirpimas",
+            "client": "Kim Hayes"
+          },
+          {
+            "time": "12:15",
+            "free": true,
+            "type": "Konsultacija",
+            "client": "Poole Huffman"
+          },
+          {
+            "time": "12:30",
+            "free": false,
+            "type": "Konsultacija",
+            "client": "Clarice Michael"
+          },
+          {
+            "time": "12:45",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Turner Mooney"
+          },
+          {
+            "time": "13:00",
+            "free": false,
+            "type": "Vyr. kirpimas",
+            "client": "Gilda Vazquez"
+          },
+          {
+            "time": "13:15",
+            "free": true,
+            "type": "Vyr. kirpimas",
+            "client": "Gay Whitney"
+          },
+          {
+            "time": "13:30",
+            "free": false,
+            "type": "Konsultacija",
+            "client": "Stone Holland"
+          },
+          {
+            "time": "13:45",
+            "free": false,
+            "type": "Plaukų dažymas",
+            "client": "Stout Bradford"
+          },
+          {
+            "time": "14:00",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Leanna Gilbert"
+          },
+          {
+            "time": "14:15",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Emerson Fitzgerald"
+          },
+          {
+            "time": "14:30",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Henry Ingram"
+          },
+          {
+            "time": "14:45",
+            "free": false,
+            "type": "Plaukų dažymas",
+            "client": "Rosemarie Sheppard"
+          },
+          {
+            "time": "15:00",
+            "free": true,
+            "type": "Konsultacija",
+            "client": "Alison Watkins"
+          },
+          {
+            "time": "15:15",
+            "free": false,
+            "type": "Plaukų dažymas",
+            "client": "Espinoza Cabrera"
+          },
+          {
+            "time": "16:00",
+            "free": true,
+            "type": "Konsultacija",
+            "client": "Becky Ward"
+          },
+          {
+            "time": "16:15",
+            "free": false,
+            "type": "Vyr. kirpimas",
+            "client": "Avery Wong"
+          },
+          {
+            "time": "16:30",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Arnold Rose"
+          },
+          {
+            "time": "16:45",
+            "free": false,
+            "type": "Konsultacija",
+            "client": "Weeks Matthews"
+          },
+          {
+            "time": "17:00",
+            "free": true,
+            "type": "Konsultacija",
+            "client": "Amparo Sullivan"
+          },
+          {
+            "time": "17:15",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Gibson Jacobs"
+          }
+        ]
+      },
+      {
+        "name": "Bette Casey",
+        "availability": [
+          {
+            "time": "14:00",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Haley Mcbride"
+          },
+          {
+            "time": "14:15",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Kinney Maxwell"
+          },
+          {
+            "time": "14:30",
+            "free": true,
+            "type": "Konsultacija",
+            "client": "Nieves Carey"
+          },
+          {
+            "time": "14:45",
+            "free": true,
+            "type": "Konsultacija",
+            "client": "Peters Webb"
+          },
+          {
+            "time": "15:00",
+            "free": false,
+            "type": "Plaukų dažymas",
+            "client": "Ellis Barker"
+          },
+          {
+            "time": "15:15",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Hillary Hutchinson"
+          },
+          {
+            "time": "15:30",
+            "free": false,
+            "type": "Plaukų dažymas",
+            "client": "Chavez Barlow"
+          },
+          {
+            "time": "15:45",
+            "free": true,
+            "type": "Konsultacija",
+            "client": "Gaines Barnes"
+          },
+          {
+            "time": "16:00",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Marianne Montoya"
+          },
+          {
+            "time": "16:15",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Carver Simpson"
+          },
+          {
+            "time": "16:30",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Cardenas Mcdonald"
+          },
+          {
+            "time": "16:45",
+            "free": false,
+            "type": "Vyr. kirpimas",
+            "client": "Grimes Schwartz"
+          },
+          {
+            "time": "17:00",
+            "free": false,
+            "type": "Konsultacija",
+            "client": "Beverley Tran"
+          },
+          {
+            "time": "17:15",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Adams Russell"
+          },
+          {
+            "time": "17:30",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Daphne Hester"
+          },
+          {
+            "time": "17:45",
+            "free": false,
+            "type": "Vyr. kirpimas",
+            "client": "Louisa Gray"
+          },
+          {
+            "time": "18:00",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Patel Padilla"
+          },
+          {
+            "time": "18:15",
+            "free": false,
+            "type": "Vyr. kirpimas",
+            "client": "Woodward Hurst"
+          },
+          {
+            "time": "18:30",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Lavonne Case"
+          },
+          {
+            "time": "18:45",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Brenda Rosales"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2019-02-22",
+    "hairCuter": [
+      {
+        "name": "Robertson Hoffman",
+        "availability": [
+          {
+            "time": "10:00",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Summers Moss"
+          },
+          {
+            "time": "10:15",
+            "free": false,
+            "type": "Vyr. kirpimas",
+            "client": "Ruthie James"
+          },
+          {
+            "time": "10:30",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Berta Fowler"
+          },
+          {
+            "time": "10:45",
+            "free": true,
+            "type": "Konsultacija",
+            "client": "Clarke Jefferson"
+          },
+          {
+            "time": "11:00",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Davidson Glenn"
+          },
+          {
+            "time": "11:15",
+            "free": false,
+            "type": "Konsultacija",
+            "client": "Finley Weeks"
+          },
+          {
+            "time": "11:30",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Barrera Bruce"
+          },
+          {
+            "time": "11:45",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Chandler Rodriguez"
+          },
+          {
+            "time": "12:00",
+            "free": true,
+            "type": "Vyr. kirpimas",
+            "client": "Cindy Mayer"
+          },
+          {
+            "time": "12:15",
+            "free": false,
+            "type": "Konsultacija",
+            "client": "Lela Bailey"
+          },
+          {
+            "time": "12:30",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Regina Curtis"
+          },
+          {
+            "time": "12:45",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Meyer Newman"
+          },
+          {
+            "time": "13:00",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Odonnell Kelly"
+          },
+          {
+            "time": "13:15",
+            "free": true,
+            "type": "Konsultacija",
+            "client": "Fuentes Rogers"
+          },
+          {
+            "time": "13:30",
+            "free": true,
+            "type": "Vyr. kirpimas",
+            "client": "Caroline Floyd"
+          },
+          {
+            "time": "13:45",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Pruitt Rowe"
+          },
+          {
+            "time": "14:00",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Castillo Atkins"
+          },
+          {
+            "time": "14:15",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Augusta Campbell"
+          },
+          {
+            "time": "14:30",
+            "free": false,
+            "type": "Konsultacija",
+            "client": "Tisha Townsend"
+          },
+          {
+            "time": "14:45",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Suzanne Hamilton"
+          }
+        ]
+      },
+      {
+        "name": "Fitzpatrick Moran",
+        "availability": [
+          {
+            "time": "13:00",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "William Mcknight"
+          },
+          {
+            "time": "13:15",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Patricia Contreras"
+          },
+          {
+            "time": "13:30",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Paige Browning"
+          },
+          {
+            "time": "13:45",
+            "free": false,
+            "type": "Vyr. kirpimas",
+            "client": "Petra Harris"
+          },
+          {
+            "time": "14:00",
+            "free": true,
+            "type": "Vyr. kirpimas",
+            "client": "Roy Workman"
+          },
+          {
+            "time": "14:15",
+            "free": true,
+            "type": "Vyr. kirpimas",
+            "client": "Terry Mcdaniel"
+          },
+          {
+            "time": "14:30",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Murphy Middleton"
+          },
+          {
+            "time": "13:45",
+            "free": false,
+            "type": "Plaukų dažymas",
+            "client": "Beatriz Cohen"
+          },
+          {
+            "time": "14:00",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Bernard Morton"
+          },
+          {
+            "time": "14:15",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Wood Rosario"
+          },
+          {
+            "time": "14:30",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Jodi Wolf"
+          },
+          {
+            "time": "14:45",
+            "free": false,
+            "type": "Vyr. kirpimas",
+            "client": "Marcy Mcleod"
+          },
+          {
+            "time": "15:00",
+            "free": true,
+            "type": "Vyr. kirpimas",
+            "client": "Emilia Chandler"
+          },
+          {
+            "time": "15:15",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Lawrence Ewing"
+          },
+          {
+            "time": "15:30",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Olga Mcpherson"
+          },
+          {
+            "time": "15:45",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Delaney Joyner"
+          },
+          {
+            "time": "16:00",
+            "free": false,
+            "type": "Vyr. kirpimas",
+            "client": "Jennings Beach"
+          },
+          {
+            "time": "17:00",
+            "free": true,
+            "type": "Plaukų dažymas",
+            "client": "Merritt Lowery"
+          },
+          {
+            "time": "18:00",
+            "free": true,
+            "type": "Mot. kirpimas",
+            "client": "Shawna Stephens"
+          },
+          {
+            "time": "19:00",
+            "free": false,
+            "type": "Mot. kirpimas",
+            "client": "Sheila Stuart"
+          }
+        ]
+      }
+    ]
+  }
+]
 }
